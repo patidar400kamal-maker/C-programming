@@ -1,0 +1,14 @@
+//to convert km to mm
+#include <stdio.h>
+int main() 
+{
+    float km, mm;
+    // Input distance in kilometers
+    printf("Enter distance in kilometers: ");
+    scanf("%f", &km);
+    // Convert kilometers to millimeters
+    mm = km * 1000000; // 1 km = 1,000,000 mm
+    // Output result
+    printf("Distance in millimeters: %.0f mm\n", mm);
+    return 0;
+}
