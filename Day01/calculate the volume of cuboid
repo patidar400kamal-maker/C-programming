@@ -1,0 +1,13 @@
+//to calculate the volume of cuboid
+#include <stdio.h>
+void main() 
+{
+    float length, width, height, volume;
+    printf("Enter length of cuboid: ");
+    scanf("%f", &length);
+    printf("Enter width of cuboid: ");
+    scanf("%f", &width);
+    printf("Enter height of cuboid: ");
+    scanf("%f", &height);
+    volume = length * width * height;
+    printf("Volume of cuboid = %.2f\n", volume);
