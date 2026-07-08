@@ -1,0 +1,10 @@
+//to calculate a circumference of a circle
+#include <stdio.h>
+#define PI 3.14
+void main() 
+{
+    float radius, circumference;
+    printf("Enter radius of the circle: ");
+    scanf("%f", &radius);
+    circumference = 2 * PI * radius;
+    printf("Circumference of the circle = %.2f\n", circumference);
