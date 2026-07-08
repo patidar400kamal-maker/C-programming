@@ -1,0 +1,13 @@
+//write a programme to calculate the sum of first and fourth digit of four digit number
+#include<stdio.h>
+void main()
+{
+	int num,a,b,sum;
+    printf("enter the value of four digit number\n");
+	scanf("%d",&num);
+	//logic for bracking indidual digit
+	a=num/1000;
+	b=num%10;
+	sum=a+b;
+	printf("the sum first and fourth digit %d\n",sum);
+ } 
