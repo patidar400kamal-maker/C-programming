@@ -1,0 +1,16 @@
+//swapping a 2 number without using 3 variable and without using arithmatic
+#include<stdio.h>
+void main()
+{
+	int a,b;
+	printf("enter the value of a and b");
+	scanf("%d%d",&a,&b);
+	
+	a=a^b;
+	b=a^b;
+	a=a^b;
+	
+	printf("after swapping:\n",a);
+	printf("a=%d\n",a);
+	printf("b=%d\n",b);
+}
