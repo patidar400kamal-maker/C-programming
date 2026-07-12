@@ -1,0 +1,12 @@
+//write a programme to calulate area and perimeter of square
+#include<stdio.h>
+void main()
+{
+	float s,area,per;
+	printf("enter the value of s\n");
+	scanf("%f",&s);
+	area=s*s;
+	per=4*s;
+	printf("the area of square %f\n",area);
+	printf("the perimeter of square %f\n",per);
+}
