@@ -1,0 +1,14 @@
+//To calculate the parameter of traingle
+#include <stdio.h>
+void main() 
+{
+    float side1, side2, side3, perimeter;
+    printf("Enter the first side of the triangle: ");
+    scanf("%f", &side1);
+    printf("Enter the second side of the triangle: ");
+    scanf("%f", &side2);
+    printf("Enter the third side of the triangle: ");
+    scanf("%f", &side3);
+    perimeter = side1 + side2 + side3;
+    printf("Perimeter of the triangle = %.2f\n", perimeter);
+}
