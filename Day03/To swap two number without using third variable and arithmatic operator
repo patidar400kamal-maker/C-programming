@@ -1,0 +1,16 @@
+//To swap two number without using third variable and arithmatic operator
+#include <stdio.h>
+void main() {
+    int a, b;
+    printf("Enter first number: ");
+    scanf("%d", &a);
+    printf("Enter second number: ");
+    scanf("%d", &b);
+    // Swap using XOR
+    a = a ^ b;
+    b = a ^ b;
+    a = a ^ b;
+    printf("After swapping:\n");
+    printf("First number = %d\n", a);
+    printf("Second number = %d\n", b);
+}
