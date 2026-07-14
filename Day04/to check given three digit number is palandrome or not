@@ -1,0 +1,20 @@
+//to check given three digit number is palandrome or not
+#include <stdio.h>
+void main() 
+{
+    int num, original, rev;
+    printf("Enter a three-digit number: ");
+    scanf("%d", &num);
+    original = num;
+    // Extract digits
+    int first = num / 100;       // hundreds place
+    int last = num % 10;         // units place
+    if(first == last) 
+    {
+        printf("%d is a Palindrome\n", original);
+    } 
+else
+    {
+        printf("%d is Not a Palindrome\n", original);
+    }
+}
