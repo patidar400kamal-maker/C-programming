@@ -1,0 +1,24 @@
+//to check given three digit number is palindrome or not
+#include <stdio.h>
+void main()
+{
+    int num, original, rev = 0, digit;
+    printf("Enter a three-digit number: ");
+    scanf("%d", &num);
+    original = num;
+    // Reverse the number
+    while(num > 0) 
+    {
+        digit = num % 10;
+        rev = rev * 10 + digit;
+        num = num / 10;
+    }
+    if(original == rev) 
+    {
+        printf("%d is a Palindrome\n", original);
+    } 
+    else
+    {
+        printf("%d is Not a Palindrome\n", original);
+    }
+}
