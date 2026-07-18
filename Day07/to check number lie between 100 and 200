@@ -1,0 +1,12 @@
+//to check number lie between 100 and 200
+#include <stdio.h>
+void main()
+{
+    int n;
+    printf("Enter number: ");
+    scanf("%d", &n);
+    if(n>=100 && n<=200)
+        printf("Number is between 100 and 200");
+    else
+        printf("Number is not between 100 and 200");
+}
