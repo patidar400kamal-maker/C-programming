@@ -1,0 +1,17 @@
+//to check salary slabs and bonus of employee
+#include <stdio.h>
+void main()
+{
+    float salary,bonus;
+    printf("Enter salary: ");
+    scanf("%f",&salary);
+
+    if(salary<20000)
+        bonus=salary*0.10;
+    else if(salary<50000)
+        bonus=salary*0.15;
+    else
+        bonus=salary*0.20;
+
+    printf("Bonus = %.2f",bonus);
+}
