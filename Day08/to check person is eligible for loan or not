@@ -1,0 +1,14 @@
+//to check person is eligible for loan or not
+#include <stdio.h>
+void main()
+{
+    int age;
+    float loan;
+    printf("Enter age and loan: ");
+    scanf("%d%f",&age,&loan);
+
+    if(age>=21 && salary>=25000)
+        printf("Eligible for Loan");
+    else
+        printf("Not Eligible");
+}
