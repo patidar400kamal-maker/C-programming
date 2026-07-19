@@ -1,0 +1,26 @@
+//to implement a simple calculator
+#include <stdio.h>
+void main()
+{
+    float a,b;
+    char op;
+
+    printf("Enter expression (e.g. 5 + 2): ");
+    scanf("%f %c %f",&a,&op,&b);
+
+    if(op=='+')
+        printf("Result = %.2f",a+b);
+    else if(op=='-')
+        printf("Result = %.2f",a-b);
+    else if(op=='*')
+        printf("Result = %.2f",a*b);
+    else if(op=='/')
+    {
+        if(b!=0)
+            printf("Result = %.2f",a/b);
+        else
+            printf("Division by zero not possible");
+    }
+    else
+        printf("Invalid Operator");
+}
