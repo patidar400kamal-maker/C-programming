@@ -1,0 +1,14 @@
+//to check second largest number between three number
+#include <stdio.h>
+void main()
+{
+    int a,b,c;
+    printf("Enter three numbers: ");
+    scanf("%d%d%d",&a,&b,&c);
+    if((a>b && a<c)||(a>c && a<b))
+        printf("Second Largest = %d",a);
+    else if((b>a && b<c)||(b>c && b<a))
+        printf("Second Largest = %d",b);
+    else
+        printf("Second Largest = %d",c);
+}
