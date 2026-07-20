@@ -1,0 +1,46 @@
+//to calculate the area of given shape square, circle, rectangle, traingle.
+#include <stdio.h>
+void main()
+{
+    int choice;
+    float side, radius, length, width, base, height, area;
+    printf("1. Square\n");
+    printf("2. Circle\n");
+    printf("3. Rectangle\n");
+    printf("4. Triangle\n");
+    printf("Enter your choice: ");
+    scanf("%d", &choice);
+    switch(choice)
+    {
+        case 1:
+            printf("Enter side: ");
+            scanf("%f", &side);
+            area = side * side;
+            printf("Area of Square = %.2f", area);
+            break;
+
+        case 2:
+            printf("Enter radius: ");
+            scanf("%f", &radius);
+            area = 3.14 * radius * radius;
+            printf("Area of Circle = %.2f", area);
+            break;
+
+        case 3:
+            printf("Enter length and width: ");
+            scanf("%f%f", &length, &width);
+            area = length * width;
+            printf("Area of Rectangle = %.2f", area);
+            break;
+
+        case 4:
+            printf("Enter base and height: ");
+            scanf("%f%f", &base, &height);
+            area = 0.5 * base * height;
+            printf("Area of Triangle = %.2f", area);
+            break;
+
+        default:
+            printf("Invalid Choice");
+    }
+}
