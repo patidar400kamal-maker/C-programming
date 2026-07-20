@@ -1,0 +1,22 @@
+//to check greater number between two number
+#include <stdio.h>
+void main()
+{
+    int a, b, choice;
+    printf("Enter two numbers: ");
+    scanf("%d%d", &a, &b);
+    choice = (a > b);
+    switch(choice)
+    {
+        case 1:
+            printf("%d is greater", a);
+            break;
+
+        case 0:
+            if(a == b)
+                printf("Both numbers are equal");
+            else
+                printf("%d is greater", b);
+            break;
+    }
+}
